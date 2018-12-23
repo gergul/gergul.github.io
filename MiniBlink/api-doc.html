@@ -958,11 +958,6 @@
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
-			<h3 class="api-def"><a name="wkeLoadW"></a>void wkeLoadW(wkeWebView webView, const wchar_t* url)</h3>
-			<div>略</div>
-			<div class="api-params">参数：略</div>
-			<div class="sep-line"></div>
-			<!---->
 			<h3 class="api-def"><a name="wkeLoadHTML"></a>void wkeLoadHTML(wkeWebView webView, const utf8* html)</h3>
 			<div>加载一段html</div>
 			<div class="api-params">参数：略</div>
@@ -984,6 +979,31 @@
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
+			
+			<h3 class="api-def"><a name="wkePostURL"></a>void wkePostURL(wkeWebView wkeView, const utf8* url, const char* postData, int postLen)</h3>
+			<div>向url post一数据</div>
+			<div class="api-params">参数：略</div>
+			<div class="sep-line"></div>
+			<!---->
+			
+			<h3 class="api-def"><a name="wkePostURLW"></a>void wkePostURLW(wkeWebView wkeView, const wchar_t* url, const char* postData, int postLen)</h3>
+			<div>wkePostURL的unicode版本</div>
+			<div class="api-params">参数：略</div>
+			<div class="sep-line"></div>
+			<!---->
+			
+			<h3 class="api-def"><a name="wkePostURL2"></a>void wkePostURL2(wkeWebView wkeView, const utf8* url, const char* postData, int postLen, const utf8* contentType)</h3>
+			<div>同wkePostURL，只不过可以传Content-Type参数</div>
+			<div class="api-params">参数：略</div>
+			<div class="sep-line"></div>
+			<!---->
+			
+			<h3 class="api-def"><a name="wkePostURLW2"></a>void wkePostURLW2(wkeWebView wkeView, const wchar_t* url, const char* postData, int postLen, const wchar_t* contentType)</h3>
+			<div>wkePostURL2的unicode版本</div>
+			<div class="api-params">参数：略</div>
+			<div class="sep-line"></div>
+			<!---->
+			
 			<h3 class="api-def"><a name="wkeNetSetHTTPHeaderField"></a>void wkeNetSetHTTPHeaderField(void* jobPtr, wchar_t* key, wchar_t* value, bool response)</h3>
 			<div>在wkeOnLoadUrlBegin回调里调用，表示设置http请求（或者file:///协议）的 http header field。response一直要被设置成false</div>
 			<div class="api-params">参数：略</div>
