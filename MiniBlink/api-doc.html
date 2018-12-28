@@ -1004,11 +1004,18 @@
 			<div class="sep-line"></div>
 			<!---->
 			
-			<h3 class="api-def"><a name="wkeNetSetHTTPHeaderField"></a>void wkeNetSetHTTPHeaderField(void* jobPtr, wchar_t* key, wchar_t* value, bool response)</h3>
+			<h3 class="api-def"><a name="wkeNetSetHTTPHeaderField"></a>void wkeNetSetHTTPHeaderField(void* jobPtr, const char* key, const char* value, bool response)</h3>
 			<div>在wkeOnLoadUrlBegin回调里调用，表示设置http请求（或者file:///协议）的 http header field。response一直要被设置成false</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
+			
+			<h3 class="api-def"><a name="wkeNetSetHTTPHeaderFieldW"></a>void wkeNetSetHTTPHeaderFieldW(void* jobPtr, const wchar_t* key, const wchar_t* value, bool response)</h3>
+			<div>wkeNetSetHTTPHeaderField的unicode版本</div>
+			<div class="api-params">参数：略</div>
+			<div class="sep-line"></div>
+			<!---->
+			
 			<h3 class="api-def"><a name="wkeNetSetMIMEType"></a>void wkeNetSetMIMEType(void* jobPtr, char* type)</h3>
 			<div>在wkeOnLoadUrlBegin回调里调用，表示设置http请求的MIME type</div>
 			<div class="api-params">参数：略</div>
