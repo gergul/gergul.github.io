@@ -526,9 +526,9 @@
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
-			<h3 class="api-def"><a name="wkeNetOnResponse"></a>void wkeNetOnResponse(wkeWebView webView, wkeNetResponseCallback callback, void* param)</h3>
-			<div>一个网络请求发送后，收到服务器response触发回调</div>
-			<div class="api-params">参数：略</div>
+			<h3 class="api-def"><a name="wkeOnResponse"></a>void wkeOnResponse(wkeWebView webView, wkeResponseCallback callback, void* param)</h3>
+			<div>一个网络请求发送后，收到服务器response触发回调。</div>
+			<div class="api-params">参数：callback - 在callback中返回true中表示中断处理</div>
 			<div class="sep-line"></div>
 			<!---->
 			<h3 class="api-def"><a name="wkeOnConsole"></a>void wkeOnConsole(wkeWebView webView, wkeConsoleCallback callback, void* param)</h3>
