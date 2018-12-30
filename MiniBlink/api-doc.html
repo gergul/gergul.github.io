@@ -75,25 +75,25 @@
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
-			<h3 class="api-def api-deprecated"><a name="wkeIsLoaded"></a>bool wkeIsLoaded(wkeWebView webView);</h3>
-			<div>（被废弃）获取webView是否处于加载状态，还是加载完成。</div>
+			<h3 class="api-def"><a name="wkeIsLoaded"></a>bool wkeIsLoaded(wkeWebView webView);</h3>
+			<div>获取webView是否处于加载状态，还是加载完成。</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
-			<h3 class="api-def api-deprecated"><a name="wkeIsLoadingSucceeded"></a>bool wkeIsLoadingSucceeded(wkeWebView webView)</h3>
-			<div>（被废弃）判断webview是否加载成功</div>
+			<h3 class="api-def"><a name="wkeIsLoadSucceeded"></a>bool wkeIsLoadSucceeded(wkeWebView webView)</h3>
+			<div>判断webview是否加载成功</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
-			<h3 class="api-def api-deprecated"><a name="wkeIsLoadFailed"></a>bool wkeIsLoadFailed(wkeWebView webView)</h3>
-			<div>（被废弃）判断webview是否加载失败</div>
+			<h3 class="api-def"><a name="wkeIsLoadFailed"></a>bool wkeIsLoadFailed(wkeWebView webView)</h3>
+			<div>判断webview是否加载失败</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
-			<h3 class="api-def api-deprecated"><a name="wkeIsLoadComplete"></a>bool wkeIsLoadComplete(wkeWebView webView)</h3>
-			<div>（被废弃）判断webview是否加载完成</div>
+			<h3 class="api-def"><a name="wkeIsLoadComplete"></a>bool wkeIsLoadComplete(wkeWebView webView)</h3>
+			<div>判断webview是否加载完成</div>
 			<div class="api-params">参数：略</div>
-			<div class="api-remark">注意：wkeIsLoadComdivlete等效于wkeIsLoadFailed、wkeIsLoadingSucceeded其中任何一个返回true</div>
+			<div class="api-remark">注意：wkeIsLoadComplete等效于wkeIsLoadFailed、wkeIsLoadSucceeded其中任何一个返回true</div>
 			
 			<div class="sep-line"></div>
 			<!---->
@@ -642,12 +642,12 @@
 			<div class="api-remark">注意：如果需要返回值，在isInClosure为true时，需要写return，为false则不用</div>
 			<div class="sep-line"></div>
 			<!---->
-			<h3 class="api-def"><a name="wkeGetFrameUrl"></a>const utf8* wkeGetFrameUrl(wkeWebView webView, wkeWebFrameHandle frameId)</h3>
+			<h3 class="api-def"><a name="wkeGetFrameURL"></a>const utf8* wkeGetFrameURL(wkeWebView webView, wkeWebFrameHandle frameId)</h3>
 			<div>获取frame对应的url</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
-			<h3 class="api-def"><a name="wkeGetFrameHandleByUrl"></a>wkeWebFrameHandle wkeGetFrameHandleByUrl(wkeWebView webView, const utf8* url)</h3>
+			<h3 class="api-def"><a name="wkeGetFrameHandleByURL"></a>wkeWebFrameHandle wkeGetFrameHandleByURL(wkeWebView webView, const utf8* url)</h3>
 			<div>获取url对应的frame</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
@@ -965,7 +965,7 @@
 			<div class="sep-line"></div>
 			<!---->
 			<h3 class="api-def"><a name="wkeLoadHtmlWithBaseUrl"></a>void wkeLoadHtmlWithBaseUrl(wkeWebView webView, const utf8* html, const utf8* baseUrl)</h3>
-			<div>加载一段html，但可以指定baseURL，也就是相对于哪个目录的url</div>
+			<div>加载一段html，但可以指定baseUrl，也就是相对于哪个目录的url</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
@@ -974,32 +974,32 @@
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
-			<h3 class="api-def"><a name="wkeGetURL"></a>const utf8* wkeGetURL(wkeWebView webView)</h3>
+			<h3 class="api-def"><a name="wkeGetUrl"></a>const utf8* wkeGetUrl(wkeWebView webView)</h3>
 			<div>获取webview主frame的url</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
 			
-			<h3 class="api-def"><a name="wkePostURL"></a>void wkePostURL(wkeWebView wkeView, const utf8* url, const char* postData, int postLen)</h3>
+			<h3 class="api-def"><a name="wkePostUrl"></a>void wkePostUrl(wkeWebView wkeView, const utf8* url, const char* postData, int postLen)</h3>
 			<div>向url post一数据</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
 			
-			<h3 class="api-def"><a name="wkePostURLW"></a>void wkePostURLW(wkeWebView wkeView, const wchar_t* url, const char* postData, int postLen)</h3>
-			<div>wkePostURL的unicode版本</div>
+			<h3 class="api-def"><a name="wkePostUrlW"></a>void wkePostUrlW(wkeWebView wkeView, const wchar_t* url, const char* postData, int postLen)</h3>
+			<div>wkePostUrl的unicode版本</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
 			
-			<h3 class="api-def"><a name="wkePostURL2"></a>void wkePostURL2(wkeWebView wkeView, const utf8* url, const char* postData, int postLen, const utf8* contentType)</h3>
-			<div>同wkePostURL，只不过可以传Content-Type参数</div>
+			<h3 class="api-def"><a name="wkePostUrl2"></a>void wkePostUrl2(wkeWebView wkeView, const utf8* url, const char* postData, int postLen, const utf8* contentType)</h3>
+			<div>同wkePostUrl，只不过可以传Content-Type参数</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
 			
-			<h3 class="api-def"><a name="wkePostURLW2"></a>void wkePostURLW2(wkeWebView wkeView, const wchar_t* url, const char* postData, int postLen, const wchar_t* contentType)</h3>
-			<div>wkePostURL2的unicode版本</div>
+			<h3 class="api-def"><a name="wkePostUrlW2"></a>void wkePostUrlW2(wkeWebView wkeView, const wchar_t* url, const char* postData, int postLen, const wchar_t* contentType)</h3>
+			<div>wkePostUrl2的unicode版本</div>
 			<div class="api-params">参数：略</div>
 			<div class="sep-line"></div>
 			<!---->
